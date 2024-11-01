@@ -1,0 +1,213 @@
+
+      header {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 5px;
+        color: white;
+        font-size: 18px;
+        border: 3px solid black;
+        
+      }
+      main{
+        display: block;
+        border: 3px solid black;
+      }
+      h2 {
+        color: white;
+        background-color: brown;
+        font-size: 25px;
+        padding: 20px;
+      }
+      h1{
+        display: inline-block;
+        font-size: 50px;
+        margin: 8px;
+        padding: 20px;
+      }
+      p{
+        padding: 0px 10px 0px 10px;
+      }
+      h4{
+        background-color: burlywood;
+        padding: 20px;
+      }
+
+      thead{
+        background-color: rgba(128, 128, 128, 0.61);
+      }
+      caption{
+        background-color:rgba(165, 42, 42, 0.719);
+        padding: 12px;
+        font-weight: bold;
+      }
+      
+      nav li {
+        padding: 0;
+        display:inline;
+        font-size: 1.5em;
+        margin: 25px;
+        padding: 2px;
+      }
+      
+      
+      p {
+        color: black;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.466);
+        border: 3px solid black;
+        text-align: center;
+        padding: 2%;
+      }
+      main .backgroundimg {
+        display: flex;
+        background-image: url(gym-5977600_1280.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vw;
+        width: auto;
+        filter: brightness(80%);
+        justify-content: center;
+        text-align: center;
+      }
+      main div p {
+        color: white;
+        font-size: 400%;
+        font-weight: bold;
+        text-align: center;
+        padding: 2%;
+        align-self: center;
+        background-color: rgba(0, 0, 0, 0.829);
+        border-radius: 20px;
+      }
+      img {
+        display: inline-block;
+        width: 76%;
+        height: auto;
+        border: 2px solid purple;
+        margin: 5%;
+      }
+
+      main .workout-images {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.582);
+      }
+      main .workout-images-photos img{
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        border: 2px solid purple;
+        margin: 1%;
+
+
+      }
+      main .text {
+        border: 2px solid yellow;
+        background-color: rgba(0, 0, 0, 0.582);
+        font-size: 15px;
+        padding: 5px;
+      }
+      main .text a {
+        text-decoration: none;
+      }
+      .get-in-touch-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:rgba(210, 105, 30, 0.61);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 16%;
+    border: 3px solid black;
+    margin: 0% 6% 0% 6%;
+    text-align: center;
+
+}
+
+.get-in-touch-button:hover {
+    background-color: black; 
+}
+caption {
+    font-weight: bold;
+}
+table {
+    border: 2px solid rgb(58, 12, 12); 
+    width:97%;
+    margin:8px;
+    background-color: rgba(255, 228, 196, 0.63);
+    
+    
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.image-container img{
+  width: 24%;
+  height: auto;
+}
+
+.section-img {
+  width: 50%; 
+  height: auto;
+  
+  border-radius:3px; 
+  margin: 3px; 
+}
+h3 {
+  background-color: rgba(210, 105, 30, 0.61);
+  padding: 20px;
+}
+.active{
+  color: blue;
+}
+body{
+  margin: 0px;
+}
+#contact {
+  background-color: grey; 
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 300px; 
+  margin: 2% 38% 2% 35%; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+label {
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
+  color: #333333e7;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 30px;
+border: solid rgba(0, 0, 0, 0.801);
+border-radius: 10px;
+}
+
+.button {
+  display: block;
+  background-color: darkblue; 
+  color: white;
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border: solid rgba(0, 0, 0, 0.801);
+  margin: 10px 5px;
+  width: 100%;
+}
+
+

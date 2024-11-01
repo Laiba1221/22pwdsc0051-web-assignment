@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photo</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      main {
+        text-align: center; 
+      }
+
+      .workout-images-photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin: 10px 0;
+      }
+
+      .workout-images-photos img {
+        width: 200px; 
+        margin: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .overlay {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); 
+        z-index: 10; 
+      }
+
+      .enlarged-image {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        max-height: 90%;
+        z-index: 20; /* Bring the image above the overlay */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the photo gallery</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Workout.html">Workout</a></li>
+          <li><a href="Nutrition.html">Nutrition</a></li>
+          <li><a href="Photo-gallery.html" class="active">Photo-gallery</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="workout-images-photos">
+        <img src="chia%20seed.jpg" alt="chia-seed" />
+        <img src="cycling-8215973_1280.jpg" alt="cycling" />
+        <img src="Breathing-exercise.jpg" alt="exercise" />
+      </div>
+      <div class="workout-images-photos">
+        <img src="breakfast-1663295_1280.jpg" alt="breakfast" />
+        <img src="nuts-3248743_1280.jpg" alt="nuts" />
+        <img src="berries-3504149_1280.jpg" alt="berries" />
+      </div>
+      <div class="workout-images-photos">
+        <img src="yg1.jpg" alt="yg" />
+        <img src="Yoga.jpg" alt="yoga" />
+        <img src="little-girl-8056089_1280.jpg" alt="little-girl" />
+      </div>
+      <div class="workout-images-photos">
+        <img src="fitness%20enthu.jpg" alt="fitness-enthu" />
+        <img src="beginner.jpg" alt="beginner" />
+        <img src="vegetables-1085063_1280.jpg" alt="vegetable" />
+      </div>
+      <div class="workout-images-photos">
+        <img src="Strenghth.jpg" alt="Strenghth" />
+        <img src="chicken.jpg" alt="chicken" />
+        <img src="Yoga.jpg" alt="Yoga Image" />
+      </div>
+      <h3>RENEE STORY...</h3>
+      <div>
+        <img src="ba.jpeg" alt="beforeafter" style="width: 30%; height: 30%" />
+      </div>
+        <p>
+          “I was 96kg the day I gave birth, I lost 20kg then I let the 20kg
+          creep back on again.” Renee decided to take charge of her weight and
+          had a gastric sleeve procedure and then undertook the Maxines
+          Challenge. “I am now 42kg down from the day of the gastric sleeve but
+          now I am also fitter and stronger, mentally and physically.”
+        </p>
+        <p>
+          "I started my journey on the 11th September 2017 when I approached
+          personal trainer Ryan Short to help me with strength training. Since
+          starting this fitness journey I was just able to lose 10kgs in a year,
+          however there came the point where the progress stopped. Ryan asked me
+          about my diet and at that point i was on a flexible diet and never
+          wanted to give up on food. He suggested me to see his dietitian Adam
+          to help me with my food regime and he worked his magic. I started my
+          journey at 89.7kg and was able to lose 33kg to get me down to 56.3kg
+          for the photoshoot!
+        </p>
+      <div>
+        <img
+          src="ba2.jpeg"
+          alt="beforeafter2"
+          style="height: 30%"
+          width="30%"
+        />
+      </div>
+
+      <p>
+        “I started my journey at 89.7kg and was able to lose 33kg to get me down
+        to 56.3kg for the photoshoot” Aagya learnt how a team of a personal
+        trainer and nutritionist can change your life, your food habits and your
+        training.
+      </p>
+    </main>
+
+    <div id="overlay" class="overlay"></div>
+
+    <footer>
+      <p>Copyright &copy; fitness and wellness</p>
+      <p>Terms of services</p>
+      <p>Privacy policy</p>
+    </footer>
+
+    <script>
+      const images = document.querySelectorAll(".workout-images-photos img");
+      const overlay = document.getElementById("overlay");
+
+      images.forEach((image) => {
+        image.addEventListener("click", function () {
+          // Create an enlarged image element
+          const enlargedImage = document.createElement("img");
+          enlargedImage.src = this.src; // Use the clicked image's source
+          enlargedImage.className = "enlarged-image";
+
+          // Clear any previous enlarged image
+          overlay.innerHTML = "";
+          overlay.appendChild(enlargedImage);
+
+          // Show the overlay
+          overlay.style.display = "block";
+
+          // Close the overlay when clicking on it
+          overlay.onclick = function () {
+            overlay.style.display = "none";
+          };
+        });
+      });
+    </script>
+  </body>
+</html>
